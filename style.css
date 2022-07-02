@@ -45,8 +45,8 @@ main{
     margin-top:55px;
     margin-left:0;
     width:100%;
-    height:400px;
-    padding-top:250px;
+    height:500px;
+    padding-top:100px;
     }
     .introduction{
     line-height:1.5;
@@ -65,7 +65,6 @@ main{
     
     .proj{
     display:flex;
-   
     padding:0;
     margin:0;
     width:100%;
@@ -74,7 +73,9 @@ main{
     
     .link > img{
     width:100%;
-    height:400px;}
+    height:400px;
+
+     }
     
  
                                                                                                                                                                                                                                                                                                                                                                                                                                                   
@@ -85,15 +86,48 @@ main{
     width:100vw;
     padding-bottom:15px;
     }
+    
+    #project-type{
+    color: white;
+    padding-bottom: 60px;
+        
+    }
+
+    #project-type > h1{
+       
+        margin: 0;
+        text-align: center;
+        padding: 0;
+        font-size: 17px;
+    }
+
+    #project-type> p{
+        text-align: center;
+    }
+
+    #project-container{
+     
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+      
+        
+        
+        
+    }
+
     .container{
-    background:black;
+    background: #45567d;;
     width:29%;
-    margin-left:3%;
-    margin-top:2%;
+    padding: 0;
+    margin:10px 0;
     }
     
     .word{
-    text-align:center;}
+    text-align:center;
+    background-color: black;
+    margin: 0;
+    }
     
     h1 {
     padding-top:40px;
@@ -103,6 +137,7 @@ main{
     .projects > header > h1{
     text-align:center;
     line-height:1.5;
+    color: white;
     }
     
     u{
@@ -118,6 +153,7 @@ main{
     
     .link:hover .code{
     color:#ff7f50;}
+    
     
     .buttn{
     display:block;
@@ -157,12 +193,14 @@ main{
     
     .second >ul{
     display:block;
-    margin:auto;
+    width:fit-content;
+    margin: auto;
+    transform: translateX(-8%);
     background-color:#be3144;}
-    
+   /* 
     .second >ul{
-    text-align:center;}
-    
+        text-align:center;}
+    */
     .second > hr{
     background:white;
     color:white;}
@@ -195,12 +233,12 @@ main{
     .container{
     width:45%;
     }
-    
+   /* 
     .second > ul {
-    padding-right:35px;
-    padding-left:22px;
-    }
-    
+        padding-right:35px;
+        padding-left:22px;
+        }
+    */
     } 
     
     @media(max-width:800px){
@@ -217,6 +255,64 @@ main{
      
     }                     
    
-    .num{
-    margin-left:2.6%;}
     
+
+    #others{
+        text-align: center;
+        display: block;
+        margin: auto;
+    }
+
+   
+
+    #flex-container{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: rgb(211, 207, 207);
+    }
+
+    .backend-flex{
+        width: 90%;
+        margin: 10px auto;
+       
+    }
+
+    @media(max-width:950px){
+
+        #flex-container{
+            display:flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-color: rgb(211, 207, 207);
+        }
+        
+        .backend-flex{
+            width: 400px;
+            margin: 10px auto;
+           
+        }
+    }
+
+    #text-holder{
+       
+        width: 65%;
+        min-width: 400px;
+       
+        color: black;
+    }
+
+    #text-holder > h3{
+        text-align: center;
+    }
+    
+    #text-holder > p{
+        padding: 0 10px;
+    }
+    
+    #Backend-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+    }
